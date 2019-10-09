@@ -18,7 +18,7 @@ int main(int argc, char **argv)
     
     double sum = 1.0;
     double global_fact = 1.0;
-    #pragma omp parallel private(global_fact)
+    #pragma omp parallel
     {
         double local_sum = 0.0;
         double fact = 1.0;
